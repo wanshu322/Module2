@@ -38,4 +38,6 @@ h2 {font-size: 90%;  }
 {
   background-color: #e0d682;
 }
-
+p { padding-left: 5%; 
+    padding-right: 5%;
+}
