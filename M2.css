@@ -1,8 +1,8 @@
 body {font-family: 'Montserrat', sans-serif;}
-h1 { 
+h1 { font-size: 175%; 
   text-align: center;}
-h2 {font-size: 90%;  }
-.items {
+h2 {font-size: 125%;  }
+.items1, .items2,.items3 {
   box-sizing: border-box;
   background-color: gray;
   padding:0px;
@@ -40,4 +40,32 @@ h2 {font-size: 90%;  }
 }
 p { padding-left: 5%; 
     padding-right: 5%;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .items1, .items2, .items3 {
+    float: left;
+    width: 29.3%;
+    margin: 2%;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+.items1, .items2 {
+    float: left;
+    width: 46%;
+    margin: 2%;
+  }
+  .items3 { float:left; 
+    width:96%%; 
+    margin:2%;}
+  
 }
